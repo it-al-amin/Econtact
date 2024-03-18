@@ -21,7 +21,7 @@ namespace Econtact.econtactClasses
         public string Gender { get; set; }
         public int RowIndex { get; internal set; }
 
-        // Create DB connection
+        // Create DB connection here DB connection is store procedure Db connection
         static string myConnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
         //Selecting from Database
