@@ -89,7 +89,6 @@ namespace Econtact
             this.textboxContactID.ReadOnly = true;
             this.textboxContactID.Size = new System.Drawing.Size(208, 30);
             this.textboxContactID.TabIndex = 2;
-            this.textboxContactID.TextChanged += new System.EventHandler(this.textboxContactID_TextChanged);
             // 
             // IblContactNumber
             // 
@@ -260,8 +259,13 @@ namespace Econtact
             this.dataGridViewContactList.RowTemplate.Height = 24;
             this.dataGridViewContactList.Size = new System.Drawing.Size(680, 295);
             this.dataGridViewContactList.TabIndex = 21;
+            this.dataGridViewContactList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewContactList_CellClick);
             this.dataGridViewContactList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridViewContactList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewContactList_CellDoubleClick);
+            this.dataGridViewContactList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewContactList_RowHeaderMouseClick);
+            this.dataGridViewContactList.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewContactList_CellMouseEnter);
             this.dataGridViewContactList.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewContactList_RowHeaderMouseClick);
+            this.dataGridViewContactList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridViewContactList_MouseDown);
             // 
             // label1
             // 

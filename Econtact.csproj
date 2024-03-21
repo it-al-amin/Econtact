@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnotherPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnotherPageForm.Designer.cs">
+      <DependentUpon>AnotherPageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Econtact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     <Compile Include="econtactClasses\contactClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnotherPageForm.resx">
+      <DependentUpon>AnotherPageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Econtact.resx">
       <DependentUpon>Econtact.cs</DependentUpon>
     </EmbeddedResource>
@@ -67,6 +76,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\AnotherPageForm.datasource" />
+    <None Include="Properties\DataSources\Econtact.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
